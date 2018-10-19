@@ -1,0 +1,75 @@
+.navigation {
+  border-bottom: 1px solid #cacaca;
+  border-top: 1px solid #ffffff;
+  background: #f3f3f3;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55px;
+    padding: 0 15px;
+
+    font: 14px $MyriadPro_regular;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    height: 55px;
+
+    line-height: 55px;
+
+    a {
+      padding: 19px 0;
+
+      text-decoration: none;
+      cursor: pointer;
+
+      color: #6a6a6a;
+
+      transition: .4s;
+
+      &:hover {
+        color: #3399cc;
+
+        transition: .5s;
+      }
+    }
+  }
+
+  &__item--active {
+
+    color: #000000;
+  }
+}
+
+@include tablet {
+  .navigation {
+
+    &__items {
+      height: 110px;
+      padding: 0;
+
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+
+      text-align: center;
+    }
+  }
+}
+
+@include mobile {
+  .navigation {
+
+    &__items {
+      height: 220px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+}

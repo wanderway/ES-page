@@ -1,13 +1,13 @@
-//#e8e8e8
-
 .header {
   box-shadow: inset 0 -60px 60px #e8e8e8;
+  border-bottom: 1px solid #cacaca;
 
   &__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 90px;
+    padding: 0 15px;
   }
 
   &__logo {
