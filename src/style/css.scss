@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  min-width: 480px;
+  padding: 0;
+  margin: 0 auto;
+
+  font: 0 "Arial", "Verdana", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.btn {
+  position: relative;
+
+  display: block;
+  padding: 0 30px;
+
+  font: 16px $Open-sans-Condensed_bold;
+  line-height: 33px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: #000000;
+  background: #e5e5e5 url("../img/btn-blue-element.png") no-repeat left;
+
+  &:after,
+  &:before {
+    position: absolute;
+    right: 10px;
+
+    height: 4px;
+    width: 12px;
+
+    background: #7d7d7d;
+
+    content: "";
+  }
+
+  &:before {
+    top: 11px;
+
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    top: 17px;
+
+    transform: rotate(-45deg);
+  }
+}
+
