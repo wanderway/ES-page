@@ -1,0 +1,66 @@
+//#e8e8e8
+
+.header {
+  box-shadow: inset 0 -60px 60px #e8e8e8;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+  }
+
+  &__logo {
+    padding: 22px 0 0 0;
+  }
+
+  &__user-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font: 14px $Open-sans-Condensed_bold;
+    text-transform: uppercase;
+
+    a {
+      display: block;
+      padding: 35.5px 0;
+
+      text-decoration: none;
+
+      color: #000000;
+
+      transition: .4s;
+
+      &:hover {
+        color: #166bae;
+
+        transition: .5s;
+      }
+    }
+  }
+
+  &__login-btn {
+    position: relative;
+
+    margin: 0 10px 0 0;
+
+    &:after {
+      position: absolute;
+
+      right: -11px;
+      top: -35.5;
+
+      width: 2px;
+      height: 20px;
+
+      background: #c8c8c8;
+
+      content: "";
+    }
+  }
+
+  &__register-btn {
+    margin: 0 0 0 10px;
+  }
+}
