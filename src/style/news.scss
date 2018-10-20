@@ -1,0 +1,41 @@
+.news {
+  padding: 25px 0;
+
+  border-bottom: 1px solid #cacaca;
+
+  &__top {
+    width: 10%;
+    height: 37px;
+    padding-top: 10px;
+    float: left;
+
+    font: 14px $Open-sans-Condensed_bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: #3399cc;
+  }
+
+  &__items {
+    position: relative;
+
+    width: 90%;
+    float: left;
+
+    font-size: 12px;
+
+    box-shadow: 0 0 10px #e5e2df;
+  }
+
+  &__item {
+    height: 37px;
+    padding: 13px 0 0 15px;
+
+    background: #ffffff;
+  }
+
+  &__play-btn {
+    display: none;
+  }
+}

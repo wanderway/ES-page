@@ -1,0 +1,86 @@
+.register-popup {
+  position: fixed;
+  top: 20%;
+  left: calc(50% - calc(100% / 6));
+
+  width: calc(100% / 3);
+  padding: 20px 30px;
+
+  background: #e9e9e9;
+  box-shadow: 0 0 10px #6a6a6a;
+
+  z-index: 20;
+
+  &__close {
+    position: absolute;
+    right: -13.5px;
+    top: -13.5px;
+
+    width: 27px;
+    height: 27px;
+
+    font-size: 0;
+
+    background: #3399cc;
+    border: none;
+    box-shadow: 0 0 10px #6a6a6a;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      position: absolute;
+      top: 12px;
+      right: 6px;
+
+      width: 15px;
+      height: 2px;
+
+      background: #ffffff;
+
+      content: "";
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+  }
+  &__title {
+    margin: 0 0 20px 0;
+    font: 18px $Open-sans-Condensed_bold;
+    text-transform: uppercase;
+
+    color: #858585;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    padding: 0 0 0 10px;
+    margin: 0 0 10px 0;
+    line-height: 25px;
+  }
+
+  &__input--register-password {
+    margin-bottom: 20px;
+  }
+
+  &__register-submit {
+    width: 40%;
+    margin-left: auto;
+  }
+
+  &--showed {
+    display: block;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}

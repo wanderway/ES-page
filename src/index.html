@@ -5,6 +5,9 @@
       <title>ES development</title>
       <link rel="stylesheet" href="css/main.css">
       <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      // Add the new slick-theme.css if you want the default styling
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body>
     <header class="header">
@@ -31,12 +34,15 @@
         <div class="news__top">top news:</div>
         <div class="news__items">
           <div class="news__item">EffectiveSoft, ltd. creates and operates remote IT
-            business units for various enterprises globally</div>
-          <!--<div class="news__item">Documents that are aimed at a general reading public,-->
-            <!--and do not require any high-level understanding of technical matters.</div>-->
-          <!--<div class="news__item">Documents that are aimed at specialists in a given field,-->
-            <!--and therefore do require a specialist familiarity with the technicalities of-->
-            <!--the subject matter.</div>-->
+            business units for various enterprises globally
+          </div>
+          <div class="news__item">Documents that are aimed at a general reading public,
+            and do not require any high-level understanding of technical matters.
+          </div>
+          <div class="news__item">Documents that are aimed at specialists in a given field,
+            and therefore do require a specialist familiarity with the technicalities of
+            the subject matter.
+          </div>
         </div>
         <div class="news__play-btn"></div>
       </div>
@@ -139,6 +145,21 @@
           </div>
         </div>
       </div>
+      <div class="customer-block  container">
+        <div class="customer-block__slider">
+          <div class="customer-block__slide-image  customer-block__slide-image--customer-1"></div>
+          <div class="customer-block__slide-image  customer-block__slide-image--customer-2"></div>
+          <div class="customer-block__slide-image  customer-block__slide-image--customer-3"></div>
+          <div class="customer-block__slide-image  customer-block__slide-image--customer-4"></div>
+          <div class="customer-block__slide-image  customer-block__slide-image--customer-5"></div>
+          <div class="customer-block__slide-image  customer-block__slide-image--customer-6"></div>
+          <div class="customer-block__slide-image  customer-block__slide-image--customer-7"></div>
+        </div>
+        <div class="customer-block__buttons-wrapper">
+          <button class="customer-block__input-btn  btn" type="submit">resizable input button</button>
+          <a href="" class="customer-block__link-btn  btn">link button</a>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__wrapper  container">
@@ -169,6 +190,22 @@
         </div>
       </div>
     </footer>
+    <div class="register-popup  register-popup--hidden">
+      <button class="register-popup__close" type="button">close</button>
+      <div class="register-popup__title">register form</div>
+      <form class="register-popup__form" action="#" method="post">
+        <input class="register-popup__input  register-popup__input--register-name" type="text" name="name" placeholder="Enter your name...">
+        <input class="register-popup__input  register-popup__input--register-surname" type="text" name="surname" placeholder="Enter your surname...">
+        <input class="register-popup__input  register-popup__input--register-email" type="email" name="email" placeholder="Enter your email...">
+        <input class="register-popup__input  register-popup__input--register-password" type="password" name="pass" placeholder="Enter your password...">
+        <button class="register-popup__register-submit  btn" type="submit">register</button>
+      </form>
+
+    </div>
+    <div class="popup-overlay  popup-overlay--hidden"></div>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
   </body>
 </html>

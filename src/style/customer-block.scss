@@ -1,0 +1,52 @@
+.customer-block {
+  padding: 20px 0;
+
+  border-top: 1px solid #ffffff;
+
+  &__slider {
+    display: flex;
+    margin: 0 0 20px 0;
+    height: 135px;
+
+    background: #f0f7e5;
+
+  }
+
+  &__slide-image {
+    width: 25%;
+    height: 135px;
+  }
+
+  &__slide-image--customer-1 {
+    background: url("../img/customer-slider_customer-1.png") no-repeat center center;
+  }
+  &__slide-image--customer-2 {
+    background: url("../img/customer-slider_customer-2.png") no-repeat center center;
+  }
+  &__slide-image--customer-3 {
+    background: url("../img/customer-slider_customer-3.png") no-repeat center center;
+  }
+  &__slide-image--customer-4 {
+    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
+  }
+  &__slide-image--customer-5 {
+    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
+  }
+  &__slide-image--customer-6 {
+    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
+  }
+  &__slide-image--customer-7 {
+    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__input-btn {
+    flex-basis: 35%;
+    border: none;
+  }
+}

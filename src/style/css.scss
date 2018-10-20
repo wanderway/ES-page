@@ -9,6 +9,8 @@
 }
 
 body {
+  position: relative;
+
   min-width: 480px;
   padding: 0;
   margin: 0 auto;
@@ -27,6 +29,7 @@ body {
 
   display: block;
   padding: 0 30px;
+  max-height: 33px;
 
   font: 16px $Open-sans-Condensed_bold;
   line-height: 33px;
@@ -34,9 +37,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  box-shadow: 0 0 10px #e5e2df;
 
   color: #000000;
-  background: #e5e5e5 url("../img/btn-blue-element.png") no-repeat left;
+  background: #ffffff url("../img/btn-blue-element.png") no-repeat left;
 
   &:after,
   &:before {
