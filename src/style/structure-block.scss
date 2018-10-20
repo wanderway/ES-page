@@ -39,23 +39,21 @@
 
   &__items {
     flex-basis: 72.5%;
+    overflow: hidden;
   }
 
   &__item {
-    display: none;
+    display: inline-block;
 
     flex-direction: row;
 
     background: #ffffff;
   }
 
-  &__item--active {
-    display: flex;
-  }
-
   &__image {
     height: 240px;
-    flex-basis: 40%;
+    width: 40%;
+    float: left;
   }
 
   &__image--first {
@@ -75,7 +73,8 @@
   }
 
   &__text {
-    flex-basis: 60%;
+    width: 60%;
+    float: left;
   }
 
   &__text-title {
