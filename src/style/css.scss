@@ -64,3 +64,12 @@ body {
   }
 }
 
+.title {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
