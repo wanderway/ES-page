@@ -1,0 +1,104 @@
+.structure-block {
+
+  padding: 20px 0;
+
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #cacaca;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    box-shadow: 0 0 10px #e5e2df;
+  }
+
+  &__list {
+    padding: 20px 0 0 15px;
+    margin: 0;
+    height: 240px;
+    flex-basis: 27.5%;
+
+    font: 16px $MyriadPro_regular;
+    list-style: none;
+
+    color: #ffffff;
+    background: #3399cc;
+    border-right: 4px solid #246b8e;
+  }
+
+  &__list-item {
+    padding: 0 0 0 15px;
+
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+  &__list-item--active {
+    background: #246b8e;
+  }
+
+  &__items {
+    flex-basis: 72.5%;
+  }
+
+  &__item {
+    display: none;
+
+    flex-direction: row;
+
+    background: #ffffff;
+  }
+
+  &__item--active {
+    display: flex;
+  }
+
+  &__image {
+    height: 240px;
+    flex-basis: 40%;
+  }
+
+  &__image--first {
+    background: url("../img/structule-block_picture-1.png") no-repeat left;
+  }
+  &__image--second {
+    background: url("../img/structule-block_picture-2.png") no-repeat left;
+  }
+  &__image--third {
+    background: url("../img/structule-block_picture-3.png") no-repeat left;
+  }
+  &__image--fourth {
+    background: url("../img/structule-block_picture-4.png") no-repeat left;
+  }
+  &__image--fifth {
+    background: url("../img/structule-block_picture-5.png") no-repeat left;
+  }
+
+  &__text {
+    flex-basis: 60%;
+  }
+
+  &__text-title {
+    padding: 0 0 0 20px;
+
+    font: 18px $MyriadPro_regular;
+    line-height: 40px;
+    text-shadow: 1px 0 3px #000000;
+
+    color: #ffffff;
+    background: #3399cc;
+  }
+
+  &__text-content {
+    padding: 40px 20px 0 20px;
+
+    font: 12px "Arial", "Verdana", sans-serif;
+    line-height: 16px;
+
+    a {
+      font-weight: bold;
+
+      color: #000000;
+    }
+  }
+}
