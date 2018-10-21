@@ -72,11 +72,20 @@ $('.structure-block__items').slick({
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 10000
+    autoplaySpeed: 1000,
+    asNavFor: '.structure-block__list'
 });
 
+$(document).ready(function() {
+    // slick carousel
+    $('.structure-block__list').slick({
+        dots: false,
+        vertical: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.structure-block__items',
+        infinite: true,
+        arrows: false
 
-
-
-
-
+    });
+});
