@@ -45,7 +45,7 @@
       <div class="structure-block  container">
         <div class="structure-block__wrapper">
           <div class="structure-block__list">
-            <div class="structure-block__list-item  structure-block__list-item--active"><small>&raquo;</small> Software Development</div>
+            <div class="structure-block__list-item"><small>&raquo;</small> Software Development</div>
             <div class="structure-block__list-item"><small>&raquo;</small> System Administration</div>
             <div class="structure-block__list-item"><small>&raquo;</small> Research & Development</div>
             <div class="structure-block__list-item"><small>&raquo;</small> Geospatial Services</div>
@@ -53,7 +53,7 @@
           </div>
           <div class="structure-block__items">
             <div class="structure-block__item  clearfix">
-              <div class="structure-block__image  structure-block__image--first"></div>
+              <div class="structure-block__image"  style="background: url(img/structure-block_picture-1.png) no-repeat center;"></div>
               <div class="structure-block__text">
                 <div class="structure-block__text-title">Header Software Development</div>
                 <div class="structure-block__text-content"><b>EffectiveSoft, ltd</b> creates and operates remote IT business units
@@ -64,7 +64,7 @@
               </div>
             </div>
             <div class="structure-block__item">
-              <div class="structure-block__image  structure-block__image--second"></div>
+              <div class="structure-block__image" style="background: url(img/structure-block_picture-2.png) no-repeat left;"></div>
               <div class="structure-block__text">
                 <div class="structure-block__text-title">System Administration</div>
                 <div class="structure-block__text-content">Sysadmins must understand the behavior of software in order to deploy it and to troubleshoot
@@ -75,7 +75,7 @@
               </div>
             </div>
             <div class="structure-block__item">
-              <div class="structure-block__image  structure-block__image--third"></div>
+              <div class="structure-block__image" style="background: url(img/structure-block_picture-3.png) no-repeat left;"></div>
               <div class="structure-block__text">
                 <div class="structure-block__text-title">Research & Development</div>
                 <div class="structure-block__text-content">R&D activities differ from institution to institution, with two
@@ -86,7 +86,7 @@
               </div>
             </div>
             <div class="structure-block__item">
-              <div class="structure-block__image  structure-block__image--fourth"></div>
+              <div class="structure-block__image" style="background: url(img/structure-block_picture-4.png) no-repeat right;"></div>
               <div class="structure-block__text">
                 <div class="structure-block__text-title">GeoSpatial Services</div>
                 <div class="structure-block__text-content">GeoSpatial Services (GSS) is a project center within Saint Mary’s
@@ -95,7 +95,7 @@
               </div>
             </div>
             <div class="structure-block__item">
-              <div class="structure-block__image  structure-block__image--fifth"></div>
+              <div class="structure-block__image"  style="background: url(img/structure-block_picture-5.png) no-repeat right;"></div>
               <div class="structure-block__text">
                 <div class="structure-block__text-title">ERP, HRM, CRM Services</div>
                 <div class="structure-block__text-content">We help you implement microsoft business solution like ERP,
@@ -143,15 +143,30 @@
       </div>
       <div class="customer-block  container">
         <div class="customer-block__slider">
-          <div class="customer-block__slide-image  customer-block__slide-image--customer-1"></div>
-          <div class="customer-block__slide-image  customer-block__slide-image--customer-2"></div>
-          <div class="customer-block__slide-image  customer-block__slide-image--customer-3"></div>
-          <div class="customer-block__slide-image  customer-block__slide-image--customer-4"></div>
-          <div class="customer-block__slide-image  customer-block__slide-image--customer-5"></div>
-          <div class="customer-block__slide-image  customer-block__slide-image--customer-6"></div>
-          <div class="customer-block__slide-image  customer-block__slide-image--customer-7"></div>
-          <div class="customer-block__slide-image  customer-block__slide-image--customer-8"></div>
-
+          <picture class="customer-block__slide-image">
+            <img src="img/customer-slider_customer-1.png">
+          </picture>
+          <picture class="customer-block__slide-image">
+            <img src="img/customer-slider_customer-2.png">
+          </picture>
+          <picture class="customer-block__slide-image">
+            <img src="img/customer-slider_customer-3.png">
+          </picture>
+          <picture class="customer-block__slide-image">
+            <img src="img/customer-slider_customer-7.png">
+          </picture>
+          <picture class="customer-block__slide-image">
+            <img src="img/customer-slider_customer-7.png">
+          </picture>
+          <picture class="customer-block__slide-image">
+            <img src="img/customer-slider_customer-7.png">
+          </picture>
+          <picture class="customer-block__slide-image">
+            <img src="img/customer-slider_customer-7.png">
+          </picture>
+          <picture class="customer-block__slide-image">
+            <img src="img/customer-slider_customer-7.png">
+          </picture>
         </div>
         <div class="customer-block__buttons-wrapper">
           <button class="customer-block__input-btn  btn" type="submit">resizable input button</button>
@@ -192,10 +207,10 @@
       <button class="register-popup__close" type="button">close</button>
       <div class="register-popup__title">register form</div>
       <form class="register-popup__form" action="#" method="post">
-        <input class="register-popup__input  register-popup__input--register-name" type="text" name="name" placeholder="Enter your name...">
-        <input class="register-popup__input  register-popup__input--register-surname" type="text" name="surname" placeholder="Enter your surname...">
-        <input class="register-popup__input  register-popup__input--register-email" type="email" name="email" placeholder="Enter your email...">
-        <input class="register-popup__input  register-popup__input--register-password" type="password" name="pass" placeholder="Enter your password...">
+        <input class="register-popup__input" type="text" name="name" placeholder="Enter your name...">
+        <input class="register-popup__input" type="text" name="surname" placeholder="Enter your surname...">
+        <input class="register-popup__input" type="email" name="email" placeholder="Enter your email...">
+        <input class="register-popup__input" type="password" name="pass" placeholder="Enter your password...">
         <button class="register-popup__register-submit  btn" type="submit">register</button>
       </form>
 

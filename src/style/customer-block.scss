@@ -23,31 +23,13 @@
     float: left;
     height: 135px;
     width: 25%;
-  }
 
-  &__slide-image--customer-1 {
-    background: url("../img/customer-slider_customer-1.png") no-repeat center center;
-  }
-  &__slide-image--customer-2 {
-    background: url("../img/customer-slider_customer-2.png") no-repeat center center;
-  }
-  &__slide-image--customer-3 {
-    background: url("../img/customer-slider_customer-3.png") no-repeat center center;
-  }
-  &__slide-image--customer-4 {
-    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
-  }
-  &__slide-image--customer-5 {
-    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
-  }
-  &__slide-image--customer-6 {
-    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
-  }
-  &__slide-image--customer-7 {
-    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
-  }
-  &__slide-image--customer-8 {
-    background: url("../img/customer-slider_customer-7.png") no-repeat center center;
+    line-height: 135px;
+    text-align: center;
+
+    img {
+      vertical-align: middle;
+    }
   }
 
   &__buttons-wrapper {
@@ -58,7 +40,6 @@
 
   &__input-btn {
     flex-basis: 35%;
-    border: none;
   }
 
   .slick-arrow {
@@ -103,12 +84,14 @@
 
     &:before {
       top: 65px;
+      right: 17px;
 
       transform: rotate(45deg);
     }
 
     &:after {
       top: 69px;
+      right: 17px;
 
       transform: rotate(-45deg);
     }
