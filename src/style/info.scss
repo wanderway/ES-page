@@ -110,3 +110,29 @@
    }
  }
 }
+
+@include mobile-xs {
+  .info {
+
+    &__main-title {
+      font-size: 28px;
+    }
+
+    &__secondary-title {
+      line-height: 30px;
+    }
+
+    &__facts-wrapper {
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    &__info-block {
+      margin-bottom: 30px;
+    }
+
+    &__info-block--no-margin {
+      margin-bottom: 0;
+    }
+  }
+}

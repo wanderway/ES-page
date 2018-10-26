@@ -180,3 +180,33 @@
     }
   }
 }
+
+
+@include mobile-xs {
+
+  .structure-block {
+
+    &__items {
+      height: 475px;
+    }
+
+    &__image {
+      float: none;
+      width: 100%;
+
+      background-position: center!important;
+    }
+
+    &__text {
+      float: none;
+      width: 100%;
+
+      height: auto;
+    }
+
+    &__text-content {
+      height: 200px;
+      padding-bottom: 15px;
+    }
+  }
+}

@@ -187,3 +187,19 @@
     }
   }
 }
+
+@include  mobile-xs {
+  .footer {
+    &__social {
+      padding: 20px 15px 0;
+    }
+
+    &__location {
+      padding-left: 15px;
+    }
+
+    &__copyright {
+      flex-basis: 60%;
+    }
+  }
+}
