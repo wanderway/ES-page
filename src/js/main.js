@@ -4,3 +4,4 @@
 // partials/news-block.js
 //= partials/customer-block.js
 //= partials/register-popup.js
+//= partials/navigation.js

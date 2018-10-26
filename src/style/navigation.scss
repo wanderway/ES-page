@@ -42,22 +42,127 @@
 
     color: #000000;
   }
+
+  &__toggle {
+    display: none;
+  }
 }
 
 @include tablet {
   .navigation {
 
-    &__items {
+    position: relative;
+
+    &__item {
+      flex-basis: 100%;
+
+      text-align: center;
+    }
+
+    &--closed .navigation__items {
+      height: 55px;
+    }
+
+    &--closed .navigation__item {
+      display: none;
+    }
+
+    &--closed .navigation__item--active {
+      display: block;
+    }
+
+    &--opened .navigation__items {
+      height: 220px;
+      flex-wrap: wrap;
+    }
+
+    &--opened .navigation__items {
+      width: 100%;
+    }
+
+    &__toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+
+      display: block;
+      width: 80px;
+      height: 55px;
+
+      font-size: 0;
+
+      background: transparent;
+      cursor: pointer;
+
+      border: none;
+
+      &:hover {
+        background: #7d7d7d;
+      }
+    }
+
+    &--closed .navigation__toggle::before {
+      position: absolute;
+      top: 19px;
+      left: 22px;
+
+      width: 36px;
+      height: 3px;
+
+      background: #cacaca;
+      box-shadow: 0 8px 0 0 #cacaca,
+      0 16px 0 0 #cacaca;
+
+      content: "";
+    }
+
+    &--opened .navigation__toggle {
+      right: 0;
+
+      &:before,
+      &:after {
+        position: absolute;
+        top: 25px;
+        left: 22px;
+
+        width: 36px;
+        height: 3px;
+
+        background: #cacaca;
+
+        content: "";
+      }
+
+      &:before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+        box-shadow: none;
+      }
+    }
+
+    &--nojs .navigation__toggle {
+      display: none;
+    }
+
+    &--nojs .navigation__items {
       height: 110px;
       padding: 0;
 
       flex-wrap: wrap;
     }
 
-    &__item {
-      width: 50%;
-
+    &--nojs .navigation__items {
       text-align: center;
+    }
+
+    &--nojs .navigation__item {
+      display: block;
+      flex-basis: 50%;
     }
   }
 }
@@ -65,12 +170,14 @@
 @include mobile {
   .navigation {
 
-    &__items {
-      height: 220px;
+    &--nojs .navigation__item {
+      display: block;
+      flex-basis: 100%;
     }
 
-    &__item {
-      width: 100%;
+    &--nojs .navigation__items {
+      height: 220px;
+      padding: 0;
     }
   }
 }
