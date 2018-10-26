@@ -6,9 +6,6 @@ var registerPopupClose = document.querySelector('.register-popup__close');
 headerRegister.addEventListener('click', function () {
     registerPopup.classList.remove('register-popup--hidden');
     registerPopup.classList.add('register-popup--showed');
-});
-
-headerRegister.addEventListener('click', function () {
     overlayPopup.classList.remove('popup-overlay--hidden');
     overlayPopup.classList.add('popup-overlay--showed');
 });
@@ -16,9 +13,7 @@ headerRegister.addEventListener('click', function () {
 registerPopupClose.addEventListener('click', function () {
     registerPopup.classList.remove('register-popup--showed');
     registerPopup.classList.add('register-popup--hidden');
-});
-
-registerPopupClose.addEventListener('click', function () {
     overlayPopup.classList.remove('popup-overlay--showed');
     overlayPopup.classList.add('popup-overlay--hidden');
 });
+
