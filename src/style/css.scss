@@ -40,34 +40,43 @@ body {
   box-shadow: 0 0 10px #e5e2df;
 
   color: #000000;
-  background: #ffffff url("../img/btn-blue-element.png") no-repeat left;
+  background: #ffffff;
   border: none;
 
   transition: .4s;
 
-  &:after,
-  &:before {
+  &:after {
     position: absolute;
+    top: 10px;
     right: 10px;
 
-    height: 4px;
-    width: 12px;
+    display: block;
+    width: 10px;
+    height: 10px;
 
-    background: #7d7d7d;
+    background: transparent;
+    border-right:4px solid #7d7d7d;
+    border-bottom:4px solid #7d7d7d;
+
+    transform:rotate(-45deg);
 
     content: "";
   }
 
   &:before {
-    top: 11px;
+    position: absolute;
+    top: 4px;
+    left: -4px;
 
-    transform: rotate(45deg);
-  }
+    width: 0;
+    height: 5px;
 
-  &:after {
-    top: 17px;
+    border-top: 20px solid transparent;
+    border-left: 33px solid #3399cc;
 
-    transform: rotate(-45deg);
+    transform: rotate(90deg);
+
+    content: "";
   }
 
   &:hover {
