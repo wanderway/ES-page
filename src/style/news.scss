@@ -44,9 +44,13 @@
 
     background: #ffffff;
 
+    @include runningStringAnimation;
+
     a {
       color: #000000;
       text-decoration: none;
+
+
 
       &:hover {
         color: #166bae;
