@@ -140,14 +140,12 @@
 
     &__technologies {
       flex-basis: 50%;
-      border-bottom: 1px solid #ffffff;
-
+      margin: 0;
     }
 
     &__location {
       flex-basis: 50%;
       border-right: none;
-      border-bottom: 1px solid #ffffff;
     }
 
     &__social {
@@ -158,6 +156,7 @@
 
       border-left: none;
       border-top: 1px solid #cacaca;
+      box-shadow: inset 0 1px 0 #ffffff;
     }
 
     &__social-buttons {
@@ -194,6 +193,7 @@
       flex-basis: 100%;
       padding-bottom: 20px;
 
+      box-shadow: inset 0 1px 0 #ffffff;
       border-top: 1px solid #cacaca;
       border-left: 0;
     }
